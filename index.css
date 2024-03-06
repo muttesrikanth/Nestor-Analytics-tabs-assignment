@@ -1,0 +1,110 @@
+* {
+  /*     reseting  */
+  margin: 0;
+  padding: 0;
+}
+.container {
+  /*   total container after body   */
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+.tabs {
+  /*  main container for displaying all tabes and data    */
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.newtab-style {
+  /* initial styles for navigation tab     */
+  cursor: pointer;
+  background-color: rgb(172, 231, 185);
+  border: 1px solid rgb(0, 0, 0);
+  color: #fff;
+  padding: 10px;
+  height: fit-content;
+  transition: all 1s;
+}
+.tab-active {
+  /*   active styles for navigation tab    */
+  background-color: green;
+  border-radius: 10px;
+}
+
+.close-btn {
+  /*  X button styling   */
+  background-color: red;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+}
+.frame-div {
+  /* total frame and search div  styling  */
+  display: none;
+  width: 90%;
+  margin-top: 10px;
+  position: absolute;
+  left: 10px;
+  animation: tab-switch 1s;
+  border: 1px solid black;
+  padding: 20px;
+}
+.iframe-container {
+  /*    iframe stylings     */
+  height: 50vh;
+  width: 100%;
+  background-color: #eee;
+  overflow: hidden;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-shadow: none;
+}
+.display-content {
+  /*  total frame card styles when it will display    */
+  display: block;
+  border-radius: 20px;
+  border-top-left-radius: 5px;
+  background-image: linear-gradient(
+    45deg,
+    rgb(146, 146, 223) 50%,
+    rgb(231, 159, 159) 50%
+  );
+  transition: all 1s;
+}
+input {
+  /*    input element styling */
+  width: 100%;
+  padding: 5px 4px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.justify-between {
+  /*  giving space between tab title and X button    */
+  display: flex;
+  justify-content: space-between;
+}
+.add-tab-btn {
+  /*  add button styling    */
+  padding: 5px 10px;
+  background-color: aqua;
+  margin-bottom: 10px;
+}
+hr {
+  /* give line after addbutton    */
+  margin-bottom: 20px;
+}
+
+@keyframes tab-switch {
+  /*  tab-switch custon animation  styles   */
+  0% {
+    transform: translateY(-500px); /*  it shows tab coming from top   */
+    left: 0;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
