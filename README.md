@@ -3,6 +3,18 @@
 ## Usage:
 Clone the Assignment into your device and open the index.html file...
 
+## note
+use native links or html pages other wise 
+use some sample links bellow:
+
+https://www.slideshare.net
+
+https://example.org
+
+https://en.wikipedia.org/wiki/Avocado
+
+https://www.openstreetmap.org/export/embed.html? 
+
 ## Objective:
 Create a page with HTML, CSS, JavaScript, and jQuery. The page should allow users to
 dynamically create and close tabs, enter URLs to load content in iframes, and switch
